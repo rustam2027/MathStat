@@ -12,7 +12,7 @@
   ]
   )
 
-  show heading.where(level: 2): it => ""
+  show heading.where(level: 2): it => []
 
   set enum(body-indent: 1em, indent: 1em)
   set list(body-indent: 1em, indent: 1em)
@@ -28,6 +28,7 @@
 
 #let definition(name, ..args) = {
   let definition = args.pos().at(0)
+  v(0.5em)
   block()[
   #hide(heading(name, level: 2))
   #strong(name) --- #definition
@@ -36,6 +37,7 @@
 
 #let statement(type, name, ..args) = {
   let definition = args.pos().at(0)
+  v(0.5em)
   block()[
   #heading(name, level: 2)
   #strong([#type (#name)])
