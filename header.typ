@@ -14,6 +14,9 @@
 
   show heading.where(level: 2): it => ""
 
+  set enum(body-indent: 1em, indent: 1em)
+  set list(body-indent: 1em, indent: 1em)
+
   text(
     size: 20pt,
     weight: "semibold",
