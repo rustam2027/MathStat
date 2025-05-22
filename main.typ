@@ -25,7 +25,7 @@
 #question(2)[
   #table(columns: (1fr, 1fr), align: center + horizon ,table.header([*название*], [*вероятнось*]))[
    Нормальное, $N_(alpha, sigma^2)$
-  ][$ 1/sqrt(2 pi) e^(-y^2 / 2) $][
+  ][$ 1/sqrt(2 pi sigma^2) e^(-(y - alpha)^2 / (2 sigma^2)) $][
     Бернулли, $B_p$
   ][$ P{xi = 0} = 1 - p \ P{xi = 1} = p $][
    Пуассона, $product_lambda$
