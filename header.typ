@@ -31,12 +31,16 @@
   ]
 }
 
-#let theorem(name, ..args) = {
+#let statement(type, name, ..args) = {
   let definition = args.pos().at(0)
   block()[
   #heading(name, level: 2)
-  #strong([Теорема(#name)])
+  #strong([#type (#name)])
 
   #definition
   ]
 }
+
+#let theorem(name, ..args) = statement([Теорема], name, ..args)
+
+#let property(name, ..args) = statement([Свойства], name, ..args)
