@@ -20,7 +20,15 @@
 #question(8)[]
 #question(10)[]
 #question(11)[
+  *Построение доверетильного интревала для дисперсии:*
+  Пусть $G (sigma) = (n S^2)/ (sigma ^ 2)$. Тогда по теореме о построении доверительных интревалов необходимо найти числа $t_epsilon^(1), t_epsilon^(2): P (t_epsilon^(1) < G(sigma) <  t_epsilon^(2)) = 1 -epsilon.$ Обычно для определения границ используются:
+  $ P(G(sigma) < t_epsilon^(1)) = epsilon / 2;  P(G(sigma) < t_epsilon^(2)) = 1 - epsilon / 2 $
 
+  Для нахождения  $t_epsilon^(1), t_epsilon^(2)$ используется таблица распределния $chi^2_(n - 1)$
+
+  Рассмотрим функционал $ G(alpha, X) = sqrt(n) (overline(x) - alpha) / S_0 $
+  $G(alpha, X) in T_(n - 1)$. Пусть $tau_epsilon$ -- квантиль уровня $1 - epsilon / 2$ распределения $T_(n-1).$ Тогда:
+  $ alpha_n^- = overline(x) - (S_0 tau_epsilon) / sqrt(n); " " alpha_n^+= overline(x) + (S_0 tau_epsilon) / sqrt(n) $
 ]
 #question(12)[
   #definition[Гипотеза][
