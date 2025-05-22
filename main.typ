@@ -1,4 +1,4 @@
-#import "header.typ": template, definition, theorem, property
+#import "header.typ": template, definition, theorem, property, corollary
 #import "questions.typ": question
 
 #show: doc => template(doc)
@@ -221,15 +221,15 @@
     Пусть $X$ – стандартный нормальный вектор, а $C = norm(c_"ij") n times n$ – ортогональная матрица. Тогда $Y = X C$ является стандартным нормальным вектором.
   ]
 
-  #theorem([])[
+  #corollary([1])[
     Пусть выполнены условия леммы Фишера и $r < n$. Тогда квадратичная форма $Q(X) = n display(sum^n_(i=1)) X^2_i - y^2_1 - ... - y^2_r $ не зависит от случайного вектора $(y_1, ..., y_r)$ и имеет распределение $chi^2$ с $n − r$ степенями свободы.
   ]
 
-  #theorem([])[
+  #corollary([2])[
     $n S^2 = (n-1) S^2_0 ~ chi^2_(n-1)$, если $X_i ~ N_(0,1)$
   ]
 
-  #theorem([])[
+  #corollary([3])[
     Пусть $X$ – выборочный вектор из распределения $N_(alpha, sigma)$. Тогда
       + $(n S_2)/ sigma^2 ~ chi^2_(n-1)$;
       + случайные величины $S^2$ и $overline(X)$ независимы.
