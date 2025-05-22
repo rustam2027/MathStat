@@ -35,7 +35,8 @@
   let definition = args.pos().at(0)
   block()[
   #heading(name, level: 2)
-  #strong([Теорема(#name)]) \
+  #strong([Теорема(#name)])
+
   #definition
   ]
 }
