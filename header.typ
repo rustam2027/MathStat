@@ -49,3 +49,5 @@
 #let theorem(name, ..args) = statement([Теорема], name, ..args)
 
 #let property(name, ..args) = statement([Свойства], name, ..args)
+
+#let corollary(name, ..args) = statement([Следствие], name, ..args)
