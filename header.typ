@@ -4,7 +4,7 @@
   let my_header = [#theme #h(1fr) #author]
 
   set text(font: "New Computer Modern", size: 12pt, lang: "ru")
-  set par(first-line-indent: 1em, linebreaks: "optimized", justify: true)
+  set par(linebreaks: "optimized", justify: true)
   set page(numbering: "1/1", header: context[
     #if counter(page).get().at(0) > 1 {
       my_header
@@ -29,7 +29,7 @@
 #let definition(name, ..args) = {
   let definition = args.pos().at(0)
   block()[
-  #heading(name, level: 2)
+  #hide(heading(name, level: 2))
   #strong(name) --- #definition
   ]
 }
