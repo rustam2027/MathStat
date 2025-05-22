@@ -21,9 +21,48 @@
 #question(7)[]
 #question(8)[]
 #question(10)[]
-#question(11)[]
+#question(11)[
+
+]
 #question(12)[
-  #definition[Гипотеза]
+  #definition[Гипотеза][
+    некоторое суждение о распредлении. Обозначается: $H_i$ 
+  ]
+
+  #definition[Простая и сложная гипотеза][
+    $H_i$ -- простая, если она однозначно востонавиливает распредение, иначе сложная
+  ]
+  *Пример:*
+    _Простые:_\
+    $H_1 = {X_1 ~ N_(0,1)}$\
+    $H_2 = {X_1 ~ E_3}$\
+    _Сложные:_\
+    $H_3 = {X_1 ~ Pi_lambda, lambda > 0}$\
+    $H_4 = {X_1 ~ X_1 - "дискретная"}$
+  
+
+  #definition[Критерий][
+    $ delta(overline(x)) = cases(H_1 ", " in A, H_2 ", " S(arrow(X)) in.not A  ) $
+    
+  ]
+
+  #definition[Размер][
+    $alpha_1 = alpha = epsilon = P_(H_i) (delta(overline(X)) eq.not H_i), " " i = 1, 2 $ 
+  ]
+
+  #definition[Вероятность ошибки $i$-го рода][
+    $alpha_i = P_(H_i) (delta(overline(X)) eq.not H_i), " " i = 1, 2 $ 
+  ]
+
+  #definition[Мощность критерия из лекций][функция $beta_delta (theta) = 1 - alpha_theta (delta)$]
+
+
+  #definition[Мощность критерия из семинаров][функция $beta = 1 - alpha_2 = P_(H_2) (delta(overline(X)) = H_2)$]
+
+  #definition[Состоятельность][
+    Критерий состоятельный, если $beta arrow.long 1$
+  ]
+
 ]
 #question(13)[
   #definition[Аналог ошибки второго рода][
@@ -35,7 +74,7 @@
 
   #theorem[Неймана-Пирсона][
     Пусть $H_1, H_2$ -- простые гипотезы, тогда НМК 
-    $ alpha_1 = alpha = epsilon  delta(overline(X)) = cases(H_1 ", " psi_2 / psi_1 <= C_epsilon, H_2 ", " psi_2 / psi_1 > C_epsilon) $ где $C_epsilon$ получается из уравнения:
+    $  delta(overline(X)) = cases(H_1 ", " psi_2 / psi_1 <= C_epsilon, H_2 ", " psi_2 / psi_1 > C_epsilon) $ где $C_epsilon$ получается из уравнения:
     $ P_(H_1) (psi_2/psi_1 > C_epsilon) = epsilon $
   ]
 ]
