@@ -51,3 +51,5 @@
 #let property(name, ..args) = statement([Свойства], name, ..args)
 
 #let corollary(name, ..args) = statement([Следствие], name, ..args)
+
+#let arr = $display(->)$
