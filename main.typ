@@ -18,7 +18,7 @@
 
   #property([свойства функций распределения])[
     + $x < y$ $=>$ $F_xi (x) <= F_xi (y)$
-    + $display(lim_(x->-oo) F_xi (x) = 0)$, $display(lim_(x -> +oo) (x) = 1)$
+    + $display(lim_(x->-oo) F_xi (x) = 0)$, $display(lim_(x -> +oo) F_xi (x) = 1)$
     + $F_xi (t - 0) = F_xi (t)$
   ]
 ]
@@ -339,7 +339,7 @@
   ]
 
   #theorem[Критерий $chi^2$ Пирсона][
-    Пусть $X_1, ..., X_n$ -- н.о.р. Тогда $ rho (overline(X)) = display(sum_(i = 1)^k (u_i - n p_i) / (n p_i)) arrow.double eta ~ chi^2_(k-1) $ где ${Delta_i}_(i=1)^k$ -- разбиение $RR$, $u_i = display(sum_(j=1)^n I (X_j in Delta_i))$, $p_i = P_(H_i)(X_1 in Delta_i) > 0$. $k$ -- число интервалов.
+    Пусть $X_1, ..., X_n$ -- н.о.р. Тогда $ rho (overline(X)) = display(sum_(i = 1)^k (u_i - n p_i)^2 / (n p_i)) arrow.double eta ~ chi^2_(k-1) $ где ${Delta_i}_(i=1)^k$ -- разбиение $RR$, $u_i = display(sum_(j=1)^n I (X_j in Delta_i))$, $p_i = P_(H_i)(X_1 in Delta_i) > 0$. $k$ -- число интервалов.
   ]
 
 ]
